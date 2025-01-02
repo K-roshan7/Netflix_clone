@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+QLD+Guides&family=Playwrite+NL+Guides&family=Protest+Revolution&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to left,black,transparent), url("images/netflix_background.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.content {
+    text-align: center;
+    margin-top: 150px;
+    padding: 0 20px;
+    color: #ffff;
+
+    .email-form{
+        width: 100%;
+    }
+
+    input{
+        width: 300px;
+        height: 40px;
+        font-size: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.top-section{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        height: 200%;
+    }
+    .top-right{
+        select{
+            height: 40px;
+            width:140px;
+            display: flex;
+            background: none;
+            border-radius: 7px;
+            color: #ffff;
+            text-align: center;
+            button{
+                width:400px
+            }
+
+            option {
+                color: black;
+                background: rgb(214,9,9);
+            }
+        }
+        }
+    }
+
+    button{
+        width: 140px;
+        color: #ffff;
+        height: 40px;
+        background-color: rgb(214,9,9);
+        border: none;
+        border-radius: 7px;
+        font-size: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    button:hover{
+        transform: translate(-3px,-3px);
+        transition: all .3s linear;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+.sign-in{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left black,transparent);
+    background: url("images/netflix_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+
+
+    form {
+        height: 80vh;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        transition: all .3s ease;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+        color: #ffffff;
+        border: 0.5px rgb(246, 241, 241) solid;
+        input{
+            height: 40px;
+            width: 80%;
+            padding-left: 15px;
+            color: rgb(255, 253, 253);
+            font-size: 1rem;   
+        }
+
+        input[type='text'],input[type='password']{
+            background: transparent;
+            border: 1px rgb(120,115,115) solid;
+            border-radius: 5px;
+            background-color: black;
+        }
+        ::placeholder{
+            color: grey;
+            font-size: 1rem;
+        
+        }
+        input:focus{
+            outline: none;
+        }
+        
+        .check{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            right: 10px;
+            gap: 10px;
+            input{
+                width: inset;
+                height: 20px;
+            }
+        }
+        a{
+            color: #ffff;
+            transition: color .3s ease;
+        }
+        
+        a:hover{
+            color: gray;
+            
+        }
+    }
+    
+}
+
+input[type='button']{
+    border: none;
+    width: 81%;
+    background-color: rgba(236, 28, 5, 0.689);
+    color: #ffff;
+    border-radius: 5px;
+}
+
+input[type='button']:hover{
+    background-color: rgb(169,0,0);
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
